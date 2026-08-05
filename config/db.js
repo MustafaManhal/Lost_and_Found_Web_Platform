@@ -19,7 +19,7 @@ db.connect((err) => {
     console.log('Connected to the database');
 });
 
-const db = mysql.createPool({
+db = mysql.createPool({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
   password: process.env.DB_PASS,
